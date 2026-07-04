@@ -31,14 +31,14 @@ export const metadata = {
   manifest: '/manifest.json',
   openGraph: {
     title: 'ATMOS — Weather Dashboard',
-    description: 'Real-time weather intelligence, beautifully designed.',
+    description: 'Weather, Air Quality & Forecasts',
     type: 'website',
     siteName: 'ATMOS',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ATMOS — Weather Dashboard',
-    description: 'Real-time weather intelligence, beautifully designed.',
+    description: 'Weather, Air Quality & Forecasts',
   },
 };
 
