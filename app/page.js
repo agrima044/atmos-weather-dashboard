@@ -309,12 +309,13 @@ export default function HomePage() {
           </div>
         </div>
 
+        <SearchBar
+          onCitySelect={handleCitySelect}
+          recentSearches={recentSearches}
+          onClearRecent={handleClearRecent}
+        />
+
         <div className="header-controls">
-          <SearchBar
-            onCitySelect={handleCitySelect}
-            recentSearches={recentSearches}
-            onClearRecent={handleClearRecent}
-          />
           <ThemeToggle theme={theme} onChange={setTheme}/>
           <UserMenu
             user={user}
