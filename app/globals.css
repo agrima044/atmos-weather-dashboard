@@ -29,7 +29,7 @@
   /* Accents */
   --accent-primary: #0284c7;      /* Sky Blue — darker for light bg */
   --accent-secondary: #0d9488;    /* Teal */
-  --accent-highlight: #7c3aed;    /* Violet */
+  --accent-highlight: #0369a1;    /* Ocean Blue (replaces purple highlight) */
   --accent-warm: #d97706;         /* Amber */
   --accent-danger: #dc2626;
   --accent-success: #16a34a;
@@ -51,7 +51,7 @@
   --grad-cloudy: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 40%, #dde5f0 100%);
   --grad-rain: linear-gradient(135deg, #c7d9f0 0%, #a8c4e0 40%, #b8d0e8 100%);
   --grad-snow: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 40%, #e8f4fd 100%);
-  --grad-storm: linear-gradient(135deg, #c4b5fd 0%, #a78bfa 30%, #818cf8 100%);
+  --grad-storm: linear-gradient(135deg, #bae6fd 0%, #38bdf8 40%, #1d4ed8 100%);
   --grad-night: linear-gradient(135deg, #1e293b 0%, #0f172a 60%, #1e1b4b 100%);
   --grad-fog: linear-gradient(135deg, #d1d5db 0%, #e5e7eb 60%, #f3f4f6 100%);
 }
@@ -75,7 +75,7 @@
   /* Accents */
   --accent-primary: #38BDF8;      /* Sky Blue */
   --accent-secondary: #2DD4BF;    /* Aurora Cyan */
-  --accent-highlight: #8B5CF6;    /* Lightning Violet */
+  --accent-highlight: #0ea5e9;    /* Sky Blue Highlight (replaces purple highlight) */
   --accent-warm: #FBBF24;
   --accent-danger: #EF4444;
   --accent-success: #22c55e;
@@ -97,7 +97,7 @@
   --grad-cloudy: linear-gradient(135deg, #1a2035 0%, #131c2d 50%, #1e2840 100%);
   --grad-rain: linear-gradient(135deg, #0c1930 0%, #0f2242 40%, #0b1a2e 100%);
   --grad-snow: linear-gradient(135deg, #0f2744 0%, #1a3a55 40%, #102336 100%);
-  --grad-storm: linear-gradient(135deg, #1a0a2e 0%, #230d40 40%, #1c1040 100%);
+  --grad-storm: linear-gradient(135deg, #021a36 0%, #032b57 40%, #0c4a6e 100%);
   --grad-night: linear-gradient(135deg, #030812 0%, #070d1c 60%, #09102b 100%);
   --grad-fog: linear-gradient(135deg, #1e2535 0%, #2a3347 40%, #1e2535 100%);
 }

@@ -76,16 +76,14 @@ export default function HourlyChart({ data, unit, theme }) {
       });
 
       // Temp gradient area
+      const lineAccent = isDark ? '#38BDF8' : '#0284c7';
+      const gradientStart = isDark ? 'rgba(56,189,248,0.35)' : 'rgba(2,132,199,0.25)';
+      const gradientMid = isDark ? 'rgba(56,189,248,0.15)' : 'rgba(2,132,199,0.1)';
+
       const grad = ctx.createLinearGradient(0, pad.top, 0, pad.top + chartH);
-      if (isDark) {
-        grad.addColorStop(0, 'rgba(139,92,246,0.5)');
-        grad.addColorStop(0.5, 'rgba(56,189,248,0.3)');
-        grad.addColorStop(1, 'rgba(56,189,248,0)');
-      } else {
-        grad.addColorStop(0, 'rgba(139,92,246,0.35)');
-        grad.addColorStop(0.5, 'rgba(56,189,248,0.2)');
-        grad.addColorStop(1, 'rgba(56,189,248,0)');
-      }
+      grad.addColorStop(0, gradientStart);
+      grad.addColorStop(0.5, gradientMid);
+      grad.addColorStop(1, 'rgba(56,189,248,0)');
 
       ctx.beginPath();
       ctx.moveTo(xScale(0), yScaleT(temps[0]));
@@ -110,7 +108,7 @@ export default function HourlyChart({ data, unit, theme }) {
         const cpX = (x0 + x1) / 2;
         ctx.bezierCurveTo(cpX, y0, cpX, y1, x1, y1);
       }
-      ctx.strokeStyle = '#8B5CF6';
+      ctx.strokeStyle = lineAccent;
       ctx.lineWidth = 2.5;
       ctx.stroke();
 
@@ -119,7 +117,7 @@ export default function HourlyChart({ data, unit, theme }) {
         if (i % 3 === 0) {
           ctx.beginPath();
           ctx.arc(xScale(i), yScaleT(t), 4, 0, Math.PI * 2);
-          ctx.fillStyle = '#8B5CF6';
+          ctx.fillStyle = lineAccent;
           ctx.fill();
           ctx.strokeStyle = isDark ? '#1e293b' : '#ffffff';
           ctx.lineWidth = 2;
@@ -149,7 +147,7 @@ export default function HourlyChart({ data, unit, theme }) {
 
       // Legend
       ctx.textAlign = 'left';
-      ctx.fillStyle = '#8B5CF6';
+      ctx.fillStyle = lineAccent;
       ctx.fillRect(pad.left, 5, 16, 3);
       ctx.fillStyle = textColor;
       ctx.fillText('Temperature', pad.left + 20, 12);

@@ -16,7 +16,7 @@ export default function AirQuality({ data }) {
   const pollutants = [
     { name: 'PM2.5', value: pm2_5, unit: 'μg/m³', max: 75, color: '#38BDF8' },
     { name: 'PM10', value: pm10, unit: 'μg/m³', max: 150, color: '#2DD4BF' },
-    { name: 'CO', value: carbon_monoxide ? (carbon_monoxide / 1000).toFixed(2) : 0, unit: 'mg/m³', max: 4, color: '#8B5CF6' },
+    { name: 'CO', value: carbon_monoxide ? (carbon_monoxide / 1000).toFixed(2) : 0, unit: 'mg/m³', max: 4, color: '#0ea5e9' },
   ];
 
   // Gauge arc SVG

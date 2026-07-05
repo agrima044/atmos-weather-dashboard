@@ -298,7 +298,7 @@ export default function HomePage() {
               <defs>
                 <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
                   <stop offset="0%" stopColor="#38BDF8"/>
-                  <stop offset="100%" stopColor="#8B5CF6"/>
+                  <stop offset="100%" stopColor="#2dd4bf"/>
                 </linearGradient>
               </defs>
             </svg>

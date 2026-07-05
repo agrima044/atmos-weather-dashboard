@@ -90,7 +90,7 @@ export default function UVIndex({ uvIndex }) {
           {/* UV scale */}
           <div className="uv-scale" aria-label="UV index scale">
             {['Low', 'Mod', 'High', 'V.High', 'Extreme'].map((label, i) => {
-              const colors = ['#22c55e', '#eab308', '#f97316', '#ef4444', '#7c3aed'];
+              const colors = ['#0d9488', '#0284c7', '#d97706', '#ef4444', '#b91c1c'];
               const active = i === category.level - 1 || (i === 4 && category.level >= 5);
               return (
                 <div key={label} className={`uv-scale-item ${active ? 'active' : ''}`}>
